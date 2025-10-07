@@ -1,9 +1,8 @@
 # MULTI-CALCULATOR-PYTHON-
 A multi-function Python calculator that includes a basic calculator (add, subtract, multiply, divide), a scientific calculator (trigonometric, logarithmic, and exponential functions), and a BMI calculator. Run it from the terminal as a command-line interface (CLI) tool. Simple, fast, and beginner-friendly.
 
-Modular Design with Functions
-
-The code is well-organized using separate functions for each calculator type:
+Modular Functions
+Separate functions for:
 
 basic_calculator()
 
@@ -11,62 +10,49 @@ scientific_calculator()
 
 bmi_calculator()
 
-Main Menu with Loop
-The main() function shows a menu in a loop, allowing the user to choose the calculator type and repeat operations until they choose to exit.
+Main Menu Loop
+Uses a while True loop with a menu for repeated use until exit.
 
-Basic Calculator Features
+Basic Calculator
 
-Performs addition, subtraction, multiplication, and division
+Supports +, −, ×, ÷
 
-Takes two user inputs and handles division by zero
+Handles division by zero
 
-Uses simple if-elif statements for operation selection
+Uses if-elif for selection
 
-Scientific Calculator Features
+Scientific Calculator
 
-Includes trigonometric functions (sin, cos, tan)
+Trig functions: sin, cos, tan
 
-Also supports logarithm, exponential (e^x), and power (x^y)
+log(x), e^x, power (x^y)
 
-Uses math module for advanced calculations
+Converts degrees to radians
 
-Converts degrees to radians before trig functions
+Uses math module
 
-BMI Calculator Functionality
+BMI Calculator
 
-Asks user for weight in kilograms and height in meters
+Input: weight (kg), height (m)
 
-Calculates BMI using the formula:
+Formula: BMI = weight / height²
 
-BMI
-=
-weight
-height
-2
-BMI=
-height
-2
-weight
-	​
+Shows BMI and category (Underweight → Obese)
 
+Error Handling
+Uses try-except to catch invalid (non-numeric) input.
 
-Classifies result into Underweight, Normal, Overweight, or Obese
+Input Checks
 
-Error Handling with try-except
-All calculators use try-except blocks to catch ValueError if the user enters non-numeric input, making the program more user-friendly.
+Height > 0 (BMI)
 
-Input Validation
-Some basic input checks are included, such as:
+x > 0 (log)
 
-Height > 0 in BMI calculator
+Loop & Exit
+Menu allows switching calculators or exiting anytime.
 
-x > 0 for logarithm function
+Clear Output
+User-friendly prompts and labeled results.
 
-Loop and Exit Option
-The program runs in a while True loop, allowing repeated use. The user can choose to exit anytime by selecting option 4.
-
-User-Friendly Output
-Clear prompts and labeled outputs are printed to guide users through the calculators. BMI output includes both the value and the category.
-
-Good Use of Python Modules
-Uses the math module for scientific functions, demonstrating how to extend basic functionality with built-in Python libraries.
+Math Module Usage
+Uses Python’s math module for all scientific functions.
